@@ -119,8 +119,8 @@ export interface ICourseBaseInfo {
   /**
    * 原始价格
    */
-   originalPrice?: number
-  
+  originalPrice?: number
+
   /**
    * 小分类
    */
@@ -148,19 +148,19 @@ export interface ICourseBaseInfo {
   /**
    * qq
    */
-   qq: string
+  qq: string
   /**
    * wechat
    */
-   wechat: string
-     /**
+  wechat: string
+  /**
    * phone
    */
-      phone: string
-        /**
+  phone: string
+  /**
    * 有效期天数
    */
-         validDays: number 
+  validDays: number
   /**
    * UI 分类选中
    */

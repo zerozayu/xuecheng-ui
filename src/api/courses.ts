@@ -49,9 +49,11 @@ export async function removeCourse(courseBaseId: number): Promise<void> {
 
 // 读取 基本信息
 export async function getBaseInfo(
-  courseBaseId: number
+  courseBaseId: string
 ): Promise<ICourseBaseInfo> {
   const { data } = await createAPI(`/content/course/${courseBaseId}`)
+  console.log('2323',data);
+  
   return data
 }
 

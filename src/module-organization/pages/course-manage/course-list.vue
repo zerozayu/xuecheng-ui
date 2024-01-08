@@ -223,6 +223,7 @@ export default class extends mixins(MixinTools) {
   private async getList() {
     this.listLoading = true
     this.listData = await list(this.listQuery, this.listQueryData)
+    console.log("courseList", this.listData);
     this.listLoading = false
   }
 

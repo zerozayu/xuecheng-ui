@@ -95,7 +95,7 @@ import CommonEnteringStep2UploadImage from '@/module-entering/pages/entering/com
 })
 export default class extends Vue {
   @PropSync('courseBaseId', {})
-  syncCourseBaseId!: number
+  syncCourseBaseId!: string
 
   @Prop({ type: String })
   teachmode!: string
@@ -138,7 +138,7 @@ export default class extends Vue {
   // 读取数据
   public async getData() {
     // alert(this.baseInfoData.pic)
-    if (this.syncCourseBaseId != 0) {
+    if (this.syncCourseBaseId != '0') {
       let data = await getBaseInfo(this.syncCourseBaseId)
       console.log("getData", data);
       

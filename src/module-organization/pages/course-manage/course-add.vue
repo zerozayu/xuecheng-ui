@@ -75,7 +75,7 @@ import CourseAddStep3Teacher from './course-add-step3-teacher.vue'
   }
 })
 export default class extends Vue {
-  private courseBaseId: number = 0 // 课程id
+  private courseBaseId: string = '0' // 课程id
   private teachmode: string = '' // 课程模式
   private stepsActive: number = 0 // 当前step
   private title: string = '录播课程'
@@ -92,7 +92,7 @@ export default class extends Vue {
       }
     }
     if (this.$route.query['courseBaseId'] !== undefined) {
-      this.courseBaseId = Number(this.$route.query['courseBaseId'])
+      this.courseBaseId = String(this.$route.query['courseBaseId'])
       this.title += '-修改'
     } else {
       this.title += '-新增'
