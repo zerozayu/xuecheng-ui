@@ -16,9 +16,9 @@
         </template>
       </el-table-column>
 
-      <!-- <el-table-column label="操作" align="center">
+      <el-table-column label="操作" align="center">
         <el-button type="text" size="mini" @click="handleDeleteFile">移除</el-button>
-      </el-table-column>-->
+      </el-table-column>
     </el-table>
     <span slot="footer" class="dialog-footer">
       <el-upload
